@@ -1,0 +1,163 @@
+{
+  "rcs": {
+    "host": "192.168.3.2",
+    "port": 8182,
+    "client_code": "RCA_BEEPER",
+    "token_code": "",
+    "timeout": 10
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8990
+  },
+  "timing": {
+    "complete_hold_sec": 10,
+    "error_hold_sec": 15,
+    "task_timeout_sec": 600,
+    "heartbeat_timeout_sec": 30,
+    "task_poll_interval_sec": 30
+  },
+
+  "kitting_layout": [
+    {
+      "kitting_id": "KITTING-1",
+      "kitting_name": "Kitting 1",
+      "lines": [
+        ["T1", "T2", "T3"],
+        ["T4", "T5", "T6"]
+      ]
+    },
+    {
+      "kitting_id": "KITTING-2",
+      "kitting_name": "Kitting 2",
+      "lines": [
+        ["T15", "T16", "T17"],
+        ["T18", "T19", "T20", "T21"]
+      ]
+    },
+    {
+      "kitting_id": "KITTING-3",
+      "kitting_name": "Kitting 3",
+      "lines": [
+        ["T9", "T10", "T11"],
+        ["T12", "T13", "T14"]
+      ]
+    }
+  ],
+
+  "stations": [
+    {"station_id":"T1","station_name":"Trạm T1","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T1","type":"00"},{"positionCode":"K1-PICK-T1","type":"00"},
+       {"positionCode":"K1-PICK-T1","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T1","type":"00"}]},
+
+    {"station_id":"T2","station_name":"Trạm T2","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T2","type":"00"},{"positionCode":"K1-PICK-T2","type":"00"},
+       {"positionCode":"K1-PICK-T2","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T2","type":"00"}]},
+
+    {"station_id":"T3","station_name":"Trạm T3","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T3","type":"00"},{"positionCode":"K1-PICK-T3","type":"00"},
+       {"positionCode":"K1-PICK-T3","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T3","type":"00"}]},
+
+    {"station_id":"T4","station_name":"Trạm T4","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T4","type":"00"},{"positionCode":"K1-PICK-T4","type":"00"},
+       {"positionCode":"K1-PICK-T4","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T4","type":"00"}]},
+
+    {"station_id":"T5","station_name":"Trạm T5","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T5","type":"00"},{"positionCode":"K1-PICK-T5","type":"00"},
+       {"positionCode":"K1-PICK-T5","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T5","type":"00"}]},
+
+    {"station_id":"T6","station_name":"Trạm T6","kitting":"KITTING-1","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K1-BUF-T6","type":"00"},{"positionCode":"K1-PICK-T6","type":"00"},
+       {"positionCode":"K1-PICK-T6","type":"00"},{"positionCode":"KITTING-1","type":"00"},
+       {"positionCode":"KITTING-1","type":"00"},{"positionCode":"K1-BUF-T6","type":"00"}]},
+
+    {"station_id":"T9","station_name":"Trạm T9","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T9","type":"00"},{"positionCode":"K3-PICK-T9","type":"00"},
+       {"positionCode":"K3-PICK-T9","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T9","type":"00"}]},
+
+    {"station_id":"T10","station_name":"Trạm T10","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T10","type":"00"},{"positionCode":"K3-PICK-T10","type":"00"},
+       {"positionCode":"K3-PICK-T10","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T10","type":"00"}]},
+
+    {"station_id":"T11","station_name":"Trạm T11","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T11","type":"00"},{"positionCode":"K3-PICK-T11","type":"00"},
+       {"positionCode":"K3-PICK-T11","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T11","type":"00"}]},
+
+    {"station_id":"T12","station_name":"Trạm T12","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T12","type":"00"},{"positionCode":"K3-PICK-T12","type":"00"},
+       {"positionCode":"K3-PICK-T12","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T12","type":"00"}]},
+
+    {"station_id":"T13","station_name":"Trạm T13","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T13","type":"00"},{"positionCode":"K3-PICK-T13","type":"00"},
+       {"positionCode":"K3-PICK-T13","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T13","type":"00"}]},
+
+    {"station_id":"T14","station_name":"Trạm T14","kitting":"KITTING-3","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K3-BUF-T14","type":"00"},{"positionCode":"K3-PICK-T14","type":"00"},
+       {"positionCode":"K3-PICK-T14","type":"00"},{"positionCode":"KITTING-3","type":"00"},
+       {"positionCode":"KITTING-3","type":"00"},{"positionCode":"K3-BUF-T14","type":"00"}]},
+
+    {"station_id":"T15","station_name":"Trạm T15","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T15","type":"00"},{"positionCode":"K2-PICK-T15","type":"00"},
+       {"positionCode":"K2-PICK-T15","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T15","type":"00"}]},
+
+    {"station_id":"T16","station_name":"Trạm T16","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T16","type":"00"},{"positionCode":"K2-PICK-T16","type":"00"},
+       {"positionCode":"K2-PICK-T16","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T16","type":"00"}]},
+
+    {"station_id":"T17","station_name":"Trạm T17","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T17","type":"00"},{"positionCode":"K2-PICK-T17","type":"00"},
+       {"positionCode":"K2-PICK-T17","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T17","type":"00"}]},
+
+    {"station_id":"T18","station_name":"Trạm T18","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T18","type":"00"},{"positionCode":"K2-PICK-T18","type":"00"},
+       {"positionCode":"K2-PICK-T18","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T18","type":"00"}]},
+
+    {"station_id":"T19","station_name":"Trạm T19","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T19","type":"00"},{"positionCode":"K2-PICK-T19","type":"00"},
+       {"positionCode":"K2-PICK-T19","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T19","type":"00"}]},
+
+    {"station_id":"T20","station_name":"Trạm T20","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T20","type":"00"},{"positionCode":"K2-PICK-T20","type":"00"},
+       {"positionCode":"K2-PICK-T20","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T20","type":"00"}]},
+
+    {"station_id":"T21","station_name":"Trạm T21","kitting":"KITTING-2","enabled":true,
+     "task_type":"MF01","task_priority":"1","task_positions":[
+       {"positionCode":"K2-BUF-T21","type":"00"},{"positionCode":"K2-PICK-T21","type":"00"},
+       {"positionCode":"K2-PICK-T21","type":"00"},{"positionCode":"KITTING-2","type":"00"},
+       {"positionCode":"KITTING-2","type":"00"},{"positionCode":"K2-BUF-T21","type":"00"}]}
+  ]
+}
